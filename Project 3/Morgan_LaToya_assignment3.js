@@ -10,8 +10,10 @@
 	var enemyName = "\"Drackensore\""
 	var enemyCount = 25;
 	var powerStrain = true;
-	
 
+
+	
+// JSON Data
 var character = {
 	
 	"cName": "Faelini",
@@ -20,10 +22,37 @@ var character = {
 	
 };
 
-
 console.log("I am a " + character.cClass +" named " +character.cName+ " about to fight my most epic battle: aiding my allies in the fight against " + enemyCount + " enemies led by the evil " +enemyName+ ".");
 
 console.log("I've brought along my " +character.cWeapons+ " to ensure success.")
+
+
+
+// Object with Accessor and Mutator
+
+var spells = {
+
+	task: "healing",
+	spell1: "Rush of Water",
+	spell2: "Chain of Waves",
+
+	rotation: function() {
+		
+	console.log("When my allies need " +this.task+ ", I know that I can count on my " +this.spell1+ " and " +this.spell2+ " spells to get the job done!");
+	
+},
+	setSpell: function(newSpell) {
+		spells.spell1 = newSpell
+		
+		}		
+	
+};
+
+spells.rotation();
+
+spells.setSpell("Volcanic Shield");
+
+console.log("I may also consider using my " +spells.spell1+ " for my own protection.");
 
 
 
@@ -31,9 +60,9 @@ console.log("I've brought along my " +character.cWeapons+ " to ensure success.")
 
 function storyContinue () {
 
-	var battleCommence = "Our story continues."
+	var battleCommence = "We're right in front of our enemy " +enemyName+ "; the battle we've been waiting for is about to begin!"
 
-	console.log("" +battleCommence+ " We're right in front of our enemy " +enemyName+ "; the battle we've been waiting for is about to begin!"); 
+	console.log("" +battleCommence); 
 
 }
 
