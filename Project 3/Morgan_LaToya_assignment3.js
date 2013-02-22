@@ -98,8 +98,10 @@ console.log("We have defeated all of " +enemyName+ "'s allies!")
 // String Function
 
 function homeStretch () {
+	
+	var defeatEnemy = "We exhaust all of our strengths until " +enemyName+ " is defeated."
 
-	return console.log("We exhaust all of our strengths until " +enemyName+ " is defeated.");
+	return console.log("" +defeatEnemy+ "");
 }
 
 homeStretch ();
