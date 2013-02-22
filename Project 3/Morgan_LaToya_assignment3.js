@@ -59,3 +59,13 @@ if (powerStrain === true) {
 }
 
 alliesHurt();
+
+
+// String Function
+
+function homeStretch() {
+
+	return console.log("We exhaust all of our strengths until " +enemyName+ " is defeated.");
+}
+
+homeStretch();
