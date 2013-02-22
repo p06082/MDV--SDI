@@ -12,9 +12,22 @@
 	var taskName = "healing"
 	var weapon1 = "staff"
 	var weapon2 = "mace and shield"
-	var enemyCount = 10;
+	var enemyCount = 25;
 	var powerStrain = true;
 	
+
+// Procedure
+
+function storyContinue () {
+
+	var battleCommence = "Our story continues."
+
+	console.log("" +battleCommence+ " We're right in front of our enemy " +enemyName+ "; the battle we've been waiting for is about to begin!"); 
+
+}
+
+storyContinue ();
+
 
 
 // Conditionals
@@ -32,7 +45,7 @@ if (powerStrain === true) {
 	
 } else {
 	if (powerStrain === false) {
-		if (enemyCount <= 10) {
+		if (enemyCount <= 25) {
 			enemyCount = 1;
 			console.log ("We have successfully defeated our foe's accomplices, leaving only " + enemyCount + ", the infamous " + enemyName + ".")
 		}
@@ -41,6 +54,24 @@ if (powerStrain === true) {
 	}
 
 }
+
+
+
+// Number Function
+
+console.log("" +enemyName+ " has called upon " +enemyCount+ " more creatures to fight at his side.");
+
+function allyFight () {
+
+	var enemyMinus = 24;
+	while (enemyMinus > 0) {
+		console.log("We have defeated an enemy! " +enemyMinus+ " to go!");
+		enemyMinus--;
+	}
+
+}
+
+allyFight ();
 
 
 
@@ -58,24 +89,26 @@ if (powerStrain === true) {
 
 }
 
-alliesHurt();
+alliesHurt ();
+
+console.log("We have defeated all of " +enemyName+ "'s allies!")
 
 
 
 // String Function
 
-function homeStretch() {
+function homeStretch () {
 
 	return console.log("We exhaust all of our strengths until " +enemyName+ " is defeated.");
 }
 
-homeStretch();
+homeStretch ();
 
 
 
 // Boolean Function
 
-	function battleOver() {
+	function battleOver () {
 
 	var	battleWon = true;
 		deadEnemy = "eliminated"
@@ -84,4 +117,4 @@ homeStretch();
 
 }
 
-battleOver();
+battleOver ();
