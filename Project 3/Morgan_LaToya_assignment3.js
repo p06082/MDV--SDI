@@ -1,4 +1,4 @@
-alert("JavaScript works!");//alert("JavaScript works!");
+//alert("JavaScript works!");
 
 /*  LaToya Morgan
 	Feb 6, 2013
@@ -19,15 +19,14 @@ alert("JavaScript works!");//alert("JavaScript works!");
 	
 console.log("" +enemyName+ " has just made a powerful attack against us all!");
 	
+	function alliesHurt ()
 	
-		var allyNames = ["Aline","Rayne","Poppy","Zeke"],
-			secondsToHeal = 5;
+	{	var allyNames = ["Aline","Rayne","Poppy","Zeke"],
 			healTime = 5;
-	
-		for (var i = 0; i < allyNames.length; i++) {
-			console.log("I have " +secondsToHeal+ " seconds to heal " +allyNames[0]+ "!");
+
 		for (var i=0; i < allyNames.length; i++) {
 			console.log("I have " +healTime+ " seconds to heal " +allyNames[i]+ "!");
-		}
-	
-		console.log("I have succesfully healed everyone's wounds!");
+
+	}
+
+alliesHurt();
