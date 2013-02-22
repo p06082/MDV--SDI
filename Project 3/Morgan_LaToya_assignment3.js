@@ -61,6 +61,7 @@ if (powerStrain === true) {
 alliesHurt();
 
 
+
 // String Function
 
 function homeStretch() {
@@ -69,3 +70,18 @@ function homeStretch() {
 }
 
 homeStretch();
+
+
+
+// Boolean Function
+
+	function battleOver() {
+
+	var	battleWon = true;
+		deadEnemy = "eliminated"
+
+	return console.log("It is " +battleWon+ " that we have won the battle and our foe has been " +deadEnemy+ ".");
+
+}
+
+battleOver();
